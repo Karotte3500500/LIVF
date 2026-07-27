@@ -1,0 +1,142 @@
+# LIVF — Layered Image Variant Format
+
+[日本語](README.ja.md) | **English**
+
+LIVF is an experimental layered image container format designed for
+character sprites and other images composed of switchable variants.
+
+A LIVF file stores image layers, folders, visibility rules, named states,
+and a reproducible default state in a single `.livf` container.
+
+## Project Status
+
+> [!WARNING]
+> LIVF is currently under development and is not yet recommended for
+> production use.
+
+- LIVF v0.1 specification: frozen
+- C# reference implementation: under development
+- Unity runtime: planned
+- Web runtime: planned
+- Editor and PSD importer: planned
+
+The v0.1 specification will remain unchanged while the initial reference
+implementation is developed and tested.
+
+## Goals
+
+LIVF aims to make it easy for applications to manage layered character
+sprites without directly depending on image filenames or editor-specific
+formats such as PSD.
+
+Typical use cases include:
+
+- Visual novel character sprites
+- RPG and adventure game dialogue portraits
+- Character expression and costume variants
+- Simple streaming avatars
+- Layered character images on the Web
+
+LIVF is not intended to replace animation systems such as Live2D.
+Version 0.1 focuses on switching and combining static image layers.
+
+## LIVF v0.1 Features
+
+- ZIP-based `.livf` container
+- UTF-8 `manifest.json`
+- PNG image layers
+- Layer and folder hierarchy
+- Visibility and opacity control
+- `multiple` and `exclusive` folder selection
+- Named states
+- State groups
+- File-wide default state
+- Default snapshot and reset behavior
+- Deterministic layer ordering
+- Normal alpha compositing
+- ID-based runtime operations
+
+## Example
+
+```csharp
+using Livf.Serialization;
+using Livf.Runtime;
+using Livf.Rendering;
+
+var document = LivfDocumentLoader.Load("character.livf");
+var character = LivfRuntime.Create(document);
+
+character.SetGroupState(
+    "expression",
+    "expression.smile"
+);
+
+character.SetVisible(
+    "accessory.glasses",
+    true
+);
+
+character.ResetToDefault();
+
+var image = LivfRenderer.Render(character);
+```
+
+> The API shown above represents the planned reference API and is not yet
+> available.
+
+## Repository Structure
+
+```text
+livf/
+├─ docs/       Specification and development documents
+├─ schemas/    JSON schemas
+├─ src/        LIVF libraries
+├─ tools/      CLI and development tools
+└─ tests/      Automated tests and LIVF fixtures
+```
+
+## Planned Components
+
+- `Livf.Core`
+- `Livf.Serialization`
+- `Livf.Validation`
+- `Livf.Rendering`
+- `Livf.Cli`
+- Unity runtime
+- Web runtime
+- LIVF editor
+- PSD importer
+
+## Versioning
+
+The LIVF file-format version and the reference implementation version are
+managed separately.
+
+Example file-format version:
+
+```json
+{
+  "livfVersion": "0.1"
+}
+```
+
+Example implementation version:
+
+```text
+0.1.0-alpha.1
+```
+
+## Contributing
+
+Contribution guidelines will be added as the reference implementation
+develops.
+
+Specification proposals, implementation feedback, test cases, and bug
+reports will be welcome.
+
+## License
+
+LIVF is licensed under the [Apache License 2.0](LICENSE).
+
+A supplementary Japanese explanation is available in
+[LICENSE.ja.md](LICENSE.ja.md).
