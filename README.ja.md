@@ -126,7 +126,9 @@ LIVFファイル形式のバージョンと、参照実装のバージョンは�
 
 ## ライセンス
 
-LIVFは、[Apache License 2.0](LICENSE)の下で公開されています。
+LIVFのソースコード、仕様書、JSON Schema、通常のドキュメントは、[Apache License 2.0](LICENSE)の下で公開されています。[Livi のサンプル `.livf`](samples/v0.1/livi/livi.livf)には CC BY 4.0 と表示条件の追加免除を適用します。Livi を含まない CC0 の汎用サンプルは準備中です。配置と利用条件は [samples README](samples/README.ja.md)を参照してください。
 
 日本語での補助説明は、[LICENSE.ja.md](LICENSE.ja.md)を参照してください。
-正式なライセンス条件は、英語の`LICENSE`が優先されます。
+Apache License 2.0の正式な条件は、英語の`LICENSE`が優先されます。
+
+Livi の利用については、[Livi の創作・利用ガイドライン](docs/livi-guidelines.ja.md)も参照してください。
