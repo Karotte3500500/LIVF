@@ -136,7 +136,13 @@ reports will be welcome.
 
 ## License
 
-LIVF is licensed under the [Apache License 2.0](LICENSE).
+LIVF source code, specifications, JSON Schema, and ordinary documentation are
+licensed under the [Apache License 2.0](LICENSE). The [Livi sample `.livf`](samples/v0.1/livi/livi.livf)
+is available under CC BY 4.0 with additional attribution waivers. A general-purpose
+CC0 sample without Livi is still in preparation. See the [samples README](samples/README.md)
+for the layout and terms.
 
 A supplementary Japanese explanation is available in
 [LICENSE.ja.md](LICENSE.ja.md).
+
+For Livi, see the [creative and usage guidelines](docs/livi-guidelines.md).

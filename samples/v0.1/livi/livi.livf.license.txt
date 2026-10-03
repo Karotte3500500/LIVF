@@ -1,0 +1,96 @@
+Livi v0.1 sample — license and additional permissions
+=====================================================
+
+対象 / Covered material
+-----------------------
+この文書は、livi.livf と、その内部の manifest.json、サムネイル、画像その他の素材に適用します。
+This notice applies to livi.livf and its internal manifest.json, thumbnail, images, and other material.
+
+原作者・権利者 / Creator and rights holder: Arashi Nawata
+原素材 / Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+基本ライセンス / Base license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+追加許諾（日本語）
+----------------
+権利者は、この素材とその改変物について、次のいずれかに該当する利用では
+CC BY 4.0 第 3 条(a)(1)の表示・通知条件を免除します。
+
+1. 利用が無償かつ非商用である場合。
+2. LIVF 形式の実装、検証、相互運用性の確認、テスト、ベンチマーク、研究、教育、
+   技術文書や技術発表を主な目的とする場合。有償・無償、商用・非商用を問いません。
+
+2 には、CI のテストデータ、公開リポジトリの fixture、SDK・ライブラリ・ツールへの
+サンプル入力の同梱、形式変換の検証、機能紹介のデモ画面、論文・技術記事・発表資料中の
+画像を含みます。ソフトウェアが有料であることや Livi がデモ画面に見えることだけを
+理由に、この免除の対象外にはしません。
+
+ここで「無償」とは、Livi を使った作品・サービス・グッズを受け取るために対価を
+支払わないことを指します。「非商用」とは、Livi の利用が主として商業上の利得や
+金銭的報酬を得ることに向けられていないことを指します。
+
+有料・商用の創作作品、広告収益を得る創作作品、販促、グッズなど、上記の免除に
+該当しない公開・配布には、CC BY 4.0 の通常の表示条件が適用されます。Livi を
+登場人物や鑑賞・販売の対象にする創作利用は、技術目的の免除には含みません。
+個人的に閲覧・編集するだけなら、表示は求めません。
+
+表示が必要な場合は、Arashi Nawata を原作者として示し、CC BY 4.0 のリンク、
+原素材へのリンク（合理的に可能な場合）、改変の有無など、同ライセンスで必要な
+情報を媒体に合った方法で示してください。
+
+表示例：
+Livi（LIVF マスコット）／原作: Arashi Nawata
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+原素材: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+改変: （行った場合に概要を記載）
+
+この追加許諾は CC BY 4.0 の本文を変更せず、同ライセンスで認められる利用に
+制限を追加しません。この免除は Arashi Nawata がこの素材に持つ権利に限り、
+改変物に加えた第三者の素材の条件には及びません。Livi の利用は、LIVF
+プロジェクトによる作品の承認・後援や公式作品としての認定を意味しません。
+
+Additional permissions (English)
+--------------------------------
+The rights holder waives the attribution and notice requirements in
+Section 3(a)(1) of CC BY 4.0 for use of this material or adaptations of it
+when either of the following applies:
+
+1. The use is both free of charge and noncommercial.
+2. The primary purpose is to implement or validate the LIVF format, check
+   interoperability, test, benchmark, conduct research, teach, or create
+   technical documentation or presentations. This applies whether the use
+   is paid or free of charge, commercial or noncommercial.
+
+Item 2 includes CI test data, fixtures in public repositories, sample inputs
+distributed with SDKs, libraries, or tools, format conversion tests, demo
+screens explaining features, and images in papers, technical articles, or
+presentations. Paid software or Livi appearing in a demo screen does not,
+by itself, remove this waiver.
+
+"Free of charge" means no payment is required to receive the work, service,
+or merchandise using Livi. "Noncommercial" means the use of Livi is not
+primarily directed toward commercial advantage or monetary compensation.
+
+For publication or distribution outside these waivers, including paid or
+commercial creative works, ad-supported creative works, promotions, and
+merchandise, the ordinary CC BY 4.0 attribution requirements apply. The
+technical-purpose waiver does not cover creative use of Livi as a character
+or as the subject of viewing or sale. Private viewing or editing requires
+no attribution.
+
+When attribution is required, credit Arashi Nawata as the creator and
+provide the CC BY 4.0 link, a link to the source where reasonably
+practicable, an indication of modifications, and the other information
+required by that license in a manner reasonable for the medium.
+
+Example credit:
+Livi (LIVF mascot) / Original work: Arashi Nawata
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+Modified: (brief description, if applicable)
+
+These additional permissions do not change the text of CC BY 4.0 or add
+restrictions to uses it permits. This waiver applies only to Arashi Nawata's
+rights in this material; it does not waive conditions for third-party
+material added to an adaptation. Using Livi does not imply that the LIVF
+project approved, sponsored, or designated your work as official.
