@@ -2,7 +2,7 @@
 
 [日本語](livi-guidelines.ja.md) | **English**
 
-These guidelines apply to the [official Livi sample](../samples/v0.1/livi/livi.livf) and its internal material. The v0.1 license and additional permissions are also stated in the [external license document](../samples/v0.1/livi/livi.livf.license.txt) next to the file. See the [samples README](../samples/README.md) for the sample layout.
+These guidelines apply to the [official Livi sample](../samples/v0.1.0/livi/livi.livf) and its internal material. The v0.1.0 license and additional permissions are also stated in the [external license document](../samples/v0.1.0/livi/livi.livf.license.txt) next to the file. See the [samples README](../samples/README.md) for the sample layout.
 
 ## About Livi
 
@@ -43,13 +43,13 @@ Example attribution:
 ```text
 Livi (LIVF mascot) / Original work: Arashi Nawata
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-Source material: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+Source material: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1.0/livi/livi.livf
 Modified: <brief description, if applicable>
 ```
 
 This is only an example. The ordinary license terms are set out in the [CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode). The additional waivers for free, noncommercial use and for technical and research use are described above. Third-party material whose rights holder cannot waive the attribution conditions will not be included in official Livi material. These guidelines do not add restrictions to the creative uses permitted by CC BY 4.0.
 
-For the v0.1 Livi `.livf`, we keep the format specification unchanged by placing the [license document](../samples/v0.1/livi/livi.livf.license.txt) containing these additional permissions next to the file, rather than inside it. The project will provide that document whenever it distributes the sample. A public URL for the document is also included in `metadata.license` in `manifest.json`, so the additional permissions remain discoverable if the `.livf` is shared alone. For file format versions after v0.1, we plan to specify a way to include the license document inside the `.livf` file.
+For the v0.1.0 Livi `.livf`, we keep the format specification unchanged by placing the [license document](../samples/v0.1.0/livi/livi.livf.license.txt) containing these additional permissions next to the file, rather than inside it. The project will provide that document whenever it distributes the sample. A public URL for the document is also included in `metadata.license` in `manifest.json`, so the additional permissions remain discoverable if the `.livf` is shared alone. For file format versions after v0.1.0, we plan to specify a way to include the license document inside the `.livf` file.
 
 ## Development, research, and education
 
@@ -73,4 +73,4 @@ Use of official material or these guidelines does not mean that the LIVF project
 
 ## Scope of this document
 
-At present, these guidelines cover the [v0.1 Livi sample](../samples/v0.1/livi/livi.livf) and its internal material. They will apply to future official material only when that material is explicitly designated as covered. Source code, specifications, and ordinary documentation are covered by the [Apache License 2.0](../LICENSE). The planned terms for CC0 samples without Livi are described in the [samples README](../samples/README.md).
+At present, these guidelines cover the [v0.1.0 Livi sample](../samples/v0.1.0/livi/livi.livf) and its internal material. They will apply to future official material only when that material is explicitly designated as covered. Source code, specifications, and ordinary documentation are covered by the [Apache License 2.0](../LICENSE). The planned terms for CC0 samples without Livi are described in the [samples README](../samples/README.md).

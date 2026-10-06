@@ -14,14 +14,11 @@ and a reproducible default state in a single `.livf` container.
 > LIVF is currently under development and is not yet recommended for
 > production use.
 
-- LIVF v0.1 specification: frozen
+- Initial LIVF specification: v0.1.0
 - C# reference implementation: under development
 - Unity runtime: planned
 - Web runtime: planned
 - Editor and PSD importer: planned
-
-The v0.1 specification will remain unchanged while the initial reference
-implementation is developed and tested.
 
 ## Goals
 
@@ -38,9 +35,9 @@ Typical use cases include:
 - Layered character images on the Web
 
 LIVF is not intended to replace animation systems such as Live2D.
-Version 0.1 focuses on switching and combining static image layers.
+Version 0.1.0 focuses on switching and combining static image layers.
 
-## LIVF v0.1 Features
+## LIVF v0.1.0 Features
 
 - ZIP-based `.livf` container
 - UTF-8 `manifest.json`
@@ -109,21 +106,13 @@ livf/
 
 ## Versioning
 
-The LIVF file-format version and the reference implementation version are
-managed separately.
-
-Example file-format version:
+LIVF file-format versions use `major.minor.patch`, for example `0.1.0`,
+`0.1.1`, `0.2.0`, and `1.0.0`. The `livfVersion` value omits the `v` prefix:
 
 ```json
 {
-  "livfVersion": "0.1"
+  "livfVersion": "0.1.0"
 }
-```
-
-Example implementation version:
-
-```text
-0.1.0-alpha.1
 ```
 
 ## Contributing
@@ -137,7 +126,7 @@ reports will be welcome.
 ## License
 
 LIVF source code, specifications, JSON Schema, and ordinary documentation are
-licensed under the [Apache License 2.0](LICENSE). The [Livi sample `.livf`](samples/v0.1/livi/livi.livf)
+licensed under the [Apache License 2.0](LICENSE). The [Livi sample `.livf`](samples/v0.1.0/livi/livi.livf)
 is available under CC BY 4.0 with additional attribution waivers. A general-purpose
 CC0 sample without Livi is still in preparation. See the [samples README](samples/README.md)
 for the layout and terms.

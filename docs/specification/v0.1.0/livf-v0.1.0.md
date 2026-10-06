@@ -1,6 +1,6 @@
-# LIVF v0.1 Specification
+# LIVF v0.1.0 Specification
 
-[日本語](livf-v0.1.ja.md) | **English**
+[日本語](livf-v0.1.0.ja.md) | **English**
 
 ## 1. Overview
 
@@ -179,11 +179,11 @@ images/costumes/school.png
 
 ## 5. manifest.json
 
-The top-level structure of LIVF v0.1 is:
+The top-level structure of LIVF v0.1.0 is:
 
 ```json
 {
-  "livfVersion": "0.1",
+  "livfVersion": "0.1.0",
   "metadata": {},
   "canvas": {},
   "defaultState": "character.default",
@@ -289,7 +289,7 @@ LIVF uses the top-left corner as the origin.
 - Coordinates may be negative.
 - A Layer may extend partially outside the Canvas.
 
-Folders do not have independent coordinate transformations in v0.1.
+Folders do not have independent coordinate transformations in v0.1.0.
 
 All Layer coordinates are absolute Canvas coordinates.
 
@@ -328,7 +328,7 @@ _
 - IDs are referenced by applications and should not be changed after publication.
 - `name` should be used for human-readable labels.
 
-In LIVF v0.1, IDs are globally unique across Nodes, States, and StateGroups.
+In LIVF v0.1.0, IDs are globally unique across Nodes, States, and StateGroups.
 
 ---
 
@@ -401,7 +401,7 @@ A Layer represents an image that is actually rendered.
 
 ### 11.2 Supported image format
 
-A LIVF v0.1-compliant runtime must support PNG.
+A LIVF v0.1.0-compliant runtime must support PNG.
 
 ```text
 image/png
@@ -409,7 +409,7 @@ image/png
 
 PNG images may use an alpha channel.
 
-WebP, JPEG, AVIF, and other formats are not required by LIVF v0.1.
+WebP, JPEG, AVIF, and other formats are not required by LIVF v0.1.0.
 
 ---
 
@@ -475,7 +475,7 @@ Effective value = 0.4
 
 A Folder may define how its child Nodes are selected by using `selectionMode`.
 
-LIVF v0.1 defines two modes:
+LIVF v0.1.0 defines two modes:
 
 - `multiple`
 - `exclusive`
@@ -772,7 +772,7 @@ Two or more `exclusive` StateGroups must not manage the same Node.
 
 A conflict also exists when Folder target expansion causes descendant Nodes to overlap.
 
-This is an error in LIVF v0.1.
+This is an error in LIVF v0.1.0.
 
 ---
 
@@ -1120,7 +1120,7 @@ Folders recursively render their children using the same rule.
 
 ## 24. Rendering process
 
-LIVF v0.1 requires only normal alpha compositing.
+LIVF v0.1.0 requires only normal alpha compositing.
 
 Rendering proceeds as follows:
 
@@ -1144,7 +1144,7 @@ all ancestor Folder opacities
 
 ### 24.2 Blend mode
 
-LIVF v0.1 uses only:
+LIVF v0.1.0 uses only:
 
 ```text
 normal
@@ -1159,7 +1159,7 @@ Multiply, additive, screen, and other blend modes are reserved for future versio
 
 ```json
 {
-  "livfVersion": "0.1",
+  "livfVersion": "0.1.0",
   "metadata": {
     "title": "Sample Character",
     "author": "Karotte",
@@ -1467,7 +1467,6 @@ Loading may continue, but a warning is produced in the following cases:
 - An image resource is unused.
 - A Layer is not referenced by any State.
 - Multiple children of an `exclusive` Folder are initially visible.
-- A State belongs to no StateGroup.
 - The Default State changes nothing.
 - Applying the Default State leaves every Layer hidden.
 - The same State changes the same Node multiple times.
@@ -1548,24 +1547,24 @@ Structural errors that cannot be resolved must still fail in Lenient mode.
 
 ## 29. Versioning
 
-Version numbers use:
+LIVF version numbers use:
 
 ```text
-major.minor
+major.minor.patch
 ```
 
 Examples:
 
 ```text
-0.1
-1.0
-1.1
-2.0
+0.1.0
+0.1.1
+0.2.0
+1.0.0
 ```
 
 ### 29.1 Major version
 
-The major version increases for incompatible changes.
+The major version increases for substantial features, incompatible specification changes, or other breaking changes.
 
 Examples:
 
@@ -1576,7 +1575,7 @@ Examples:
 
 ### 29.2 Minor version
 
-The minor version increases for backward-compatible additions.
+The minor version increases for backward-compatible features or specification extensions within the same major version.
 
 Examples:
 
@@ -1585,7 +1584,11 @@ Examples:
 - Adding a blend mode
 - Adding a metadata field
 
-### 29.3 Unknown properties
+### 29.3 Patch version
+
+The patch version increases for minor corrections, typo fixes, or clarifications that do not change the intended specification.
+
+### 29.4 Unknown properties
 
 Within the same major version, a runtime may ignore unknown optional properties.
 
@@ -1597,7 +1600,7 @@ A future specification will define a feature-declaration mechanism for unknown r
 
 ### 30.1 External references
 
-LIVF v0.1 prohibits external URLs and references outside the container.
+LIVF v0.1.0 prohibits external URLs and references outside the container.
 
 Invalid examples:
 
@@ -1637,13 +1640,13 @@ When a limit is exceeded, loading may stop with `ResourceLimitExceeded`.
 
 ### 30.4 Scripts
 
-LIVF v0.1 does not contain executable scripts.
+LIVF v0.1.0 does not contain executable scripts.
 
 ---
 
-## 31. Required LIVF v0.1 features
+## 31. Required LIVF v0.1.0 features
 
-A LIVF v0.1-compliant runtime must support:
+A LIVF v0.1.0-compliant runtime must support:
 
 - ZIP-based containers
 - UTF-8 `manifest.json`
@@ -1671,9 +1674,9 @@ A LIVF v0.1-compliant runtime must support:
 
 ---
 
-## 32. Features excluded from LIVF v0.1
+## 32. Features excluded from LIVF v0.1.0
 
-LIVF v0.1 does not define:
+LIVF v0.1.0 does not define:
 
 - Layer animation
 - Frame animation

@@ -2,7 +2,7 @@
 
 **日本語** | [English](livi-guidelines.md)
 
-このガイドラインは、[Livi の公式サンプル](../samples/v0.1/livi/livi.livf)とその内部素材に適用します。v0.1 のライセンスと追加許諾は、同じディレクトリの[外付けライセンス文書](../samples/v0.1/livi/livi.livf.license.txt)にも記載しています。サンプル全体の配置は [samples README](../samples/README.ja.md)を参照してください。
+このガイドラインは、[Livi の公式サンプル](../samples/v0.1.0/livi/livi.livf)とその内部素材に適用します。v0.1.0 のライセンスと追加許諾は、同じディレクトリの[外付けライセンス文書](../samples/v0.1.0/livi/livi.livf.license.txt)にも記載しています。サンプル全体の配置は [samples README](../samples/README.ja.md)を参照してください。
 
 ## Livi について
 
@@ -43,13 +43,13 @@ Livi の素材やその改変物を公開・配布・公衆に表示する場合
 ```text
 Livi（LIVF マスコット）／原作: Arashi Nawata
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-原素材: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+原素材: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1.0/livi/livi.livf
 改変: <行った場合に概要を記載>
 ```
 
 上の表示は一例です。通常のライセンス条件は [CC BY 4.0 の原文](https://creativecommons.org/licenses/by/4.0/legalcode)に従います。無償・非商用利用と技術・研究目的の利用に対する表示条件の免除は、上記の追加許諾に従います。権利者が表示条件を免除できない第三者の素材は、Livi の公式素材に含めません。このガイドラインは、同ライセンスで認められた創作や利用に追加の制限を課すものではありません。
 
-v0.1 の Livi `.livf` では、形式の仕様を維持するため、追加許諾を記した[ライセンス文書](../samples/v0.1/livi/livi.livf.license.txt)をファイル内には入れず、同じディレクトリに外付けで置きます。プロジェクトがサンプルを配布するときは、この文書も一緒に提供します。`.livf` だけが共有された場合にも追加許諾を確認できるよう、`manifest.json` の `metadata.license` にこの文書の公開 URL を記載します。v0.1 より後の形式バージョンでは、ライセンス文書を `.livf` 内に同梱する方式を仕様に定める方針です。
+v0.1.0 の Livi `.livf` では、形式の仕様を維持するため、追加許諾を記した[ライセンス文書](../samples/v0.1.0/livi/livi.livf.license.txt)をファイル内には入れず、同じディレクトリに外付けで置きます。プロジェクトがサンプルを配布するときは、この文書も一緒に提供します。`.livf` だけが共有された場合にも追加許諾を確認できるよう、`manifest.json` の `metadata.license` にこの文書の公開 URL を記載します。v0.1.0 より後の形式バージョンでは、ライセンス文書を `.livf` 内に同梱する方式を仕様に定める方針です。
 
 ## 開発・研究・教育への利用
 
@@ -73,4 +73,4 @@ Livi を使った個人や団体の作品は、その制作者の作品です。
 
 ## この文書の対象
 
-現在このガイドラインが対象とする公式素材は、[v0.1 の Livi サンプル](../samples/v0.1/livi/livi.livf)とその内部素材です。今後の公式素材には、対象として明示した場合に適用します。ソースコード、仕様書、通常のドキュメントには [Apache License 2.0](../LICENSE) が適用されます。Livi を含まない CC0 サンプルの方針は、[samples README](../samples/README.ja.md)に記載しています。
+現在このガイドラインが対象とする公式素材は、[v0.1.0 の Livi サンプル](../samples/v0.1.0/livi/livi.livf)とその内部素材です。今後の公式素材には、対象として明示した場合に適用します。ソースコード、仕様書、通常のドキュメントには [Apache License 2.0](../LICENSE) が適用されます。Livi を含まない CC0 サンプルの方針は、[samples README](../samples/README.ja.md)に記載しています。
