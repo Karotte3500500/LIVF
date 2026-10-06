@@ -1,4 +1,4 @@
-Livi v0.1 sample — license and additional permissions
+Livi v0.1.0 sample — license and additional permissions
 =====================================================
 
 対象 / Covered material
@@ -7,7 +7,7 @@ Livi v0.1 sample — license and additional permissions
 This notice applies to livi.livf and its internal manifest.json, thumbnail, images, and other material.
 
 原作者・権利者 / Creator and rights holder: Arashi Nawata
-原素材 / Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+原素材 / Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1.0/livi/livi.livf
 基本ライセンス / Base license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/legalcode
 
@@ -41,7 +41,7 @@ CC BY 4.0 第 3 条(a)(1)の表示・通知条件を免除します。
 表示例：
 Livi（LIVF マスコット）／原作: Arashi Nawata
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-原素材: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+原素材: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1.0/livi/livi.livf
 改変: （行った場合に概要を記載）
 
 この追加許諾は CC BY 4.0 の本文を変更せず、同ライセンスで認められる利用に
@@ -86,7 +86,7 @@ required by that license in a manner reasonable for the medium.
 Example credit:
 Livi (LIVF mascot) / Original work: Arashi Nawata
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1/livi/livi.livf
+Source: https://github.com/Karotte3500500/LIVF/blob/main/samples/v0.1.0/livi/livi.livf
 Modified: (brief description, if applicable)
 
 These additional permissions do not change the text of CC BY 4.0 or add

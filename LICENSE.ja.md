@@ -29,7 +29,7 @@ LIVFのソースコード、仕様書、JSON Schema、およびリポジトリ�
 
 ## テスト素材と画像について
 
-サンプル `.livf` には、コードとは別の条件を適用します。[Livi の v0.1 サンプル](samples/v0.1/livi/livi.livf)には CC BY 4.0 と表示条件の追加免除を適用します。Livi を含まない CC0 サンプルは準備中です。配置と各サンプルの利用条件は [samples README](samples/README.ja.md)を参照してください。
+サンプル `.livf` には、コードとは別の条件を適用します。[Livi の v0.1.0 サンプル](samples/v0.1.0/livi/livi.livf)には CC BY 4.0 と表示条件の追加免除を適用します。Livi を含まない CC0 サンプルは準備中です。配置と各サンプルの利用条件は [samples README](samples/README.ja.md)を参照してください。
 
 Livi の詳細は [Livi の創作・利用ガイドライン](docs/livi-guidelines.ja.md)を参照してください。
 
