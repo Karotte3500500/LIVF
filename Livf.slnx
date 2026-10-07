@@ -2,4 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/Livf.Core/Livf.Core.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Livf.Core.Tests/Livf.Core.Tests.csproj" />
+  </Folder>
 </Solution>
