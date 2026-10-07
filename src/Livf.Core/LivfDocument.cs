@@ -28,6 +28,10 @@ public sealed class LivfDocument
         StateGroups = stateGroups.ToArray();
     }
 
+    /// <summary>
+    /// ノードを列挙する。フォルダの子孫も含む。
+    /// This method enumerates all nodes, including descendants of folders.
+    /// </summary>
     public IEnumerable<LivfNode> EnumerateNodes()
     {
         foreach (var node in Nodes)
@@ -44,5 +48,32 @@ public sealed class LivfDocument
                 yield return descendant;
             }
         }
+    }
+
+    /// <summary>
+    /// 指定されたIDを持つノードを列挙する。このメソッドではIDの一意性を検証しない。
+    /// Enumerates nodes with the specified ID. This method does not validate ID uniqueness.
+    /// </summary>
+    public IEnumerable<LivfNode> FindNodes(string id)
+    {
+        return EnumerateNodes().Where(n => n.Id == id);
+    }
+
+    /// <summary>
+    /// 指定されたIDを持つステートを列挙する。このメソッドではIDの一意性を検証しない。
+    /// Enumerates states with the specified ID. This method does not validate ID uniqueness.
+    /// </summary>
+    public IEnumerable<LivfState> FindStates(string id)
+    {
+        return States.Where(s => s.Id == id);
+    }
+
+    /// <summary>
+    /// 指定されたIDを持つステートグループを列挙する。このメソッドではIDの一意性を検証しない。
+    /// Enumerates state groups with the specified ID. This method does not validate ID uniqueness.
+    /// </summary>
+    public IEnumerable<LivfStateGroup> FindStateGroups(string id)
+    {
+        return StateGroups.Where(sg => sg.Id == id);
     }
 }

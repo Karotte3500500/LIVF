@@ -14,6 +14,10 @@ public sealed class LivfFolder : LivfNode
         Children = children.ToArray();
     }
 
+    /// <summary>
+    /// 子孫をすべて列挙する。子要素とその子孫を再帰的に含む。
+    /// Enumerates all descendants of this folder, including children and their descendants recursively.
+    /// </summary>
     public IEnumerable<LivfNode> EnumerateDescendants()
     {
         foreach (var child in Children)
