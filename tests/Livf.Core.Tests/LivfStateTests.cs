@@ -4,6 +4,7 @@ namespace Livf.Core.Tests;
 
 public class LivfStateTests
 {
+    // State構築後に入力元のChangeとタグを変更しても、宣言内容は変わらない。
     [Fact]
     public void Constructor_CopiesChangesAndTags()
     {
@@ -32,6 +33,7 @@ public class LivfStateTests
         Assert.Equal("expression", Assert.Single(state.Tags!));
     }
 
+    // tagsの省略と空リストの明示を区別して保持する。
     [Fact]
     public void Constructor_DistinguishesOmittedAndEmptyTags()
     {

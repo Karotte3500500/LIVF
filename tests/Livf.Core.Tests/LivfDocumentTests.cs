@@ -5,6 +5,7 @@ namespace Livf.Core.Tests;
 
 public class LivfDocumentTests
 {
+    // IDが重複しても、該当するNodeを宣言順にすべて返す。
     [Fact]
     public void FindNodes_ReturnsAllNodesWithDuplicateIds()
     {
@@ -66,6 +67,7 @@ public class LivfDocumentTests
         Assert.Same(layerB, result[1]);
     }
 
+    // ルートNodeとFolderの子孫を宣言順に列挙する。
     [Fact]
     public void EnumerateNodes_EnumeratesRootAndNestedNodesInDeclarationOrder()
     {
@@ -137,6 +139,7 @@ public class LivfDocumentTests
         Assert.Equal(new[] { "root", "inner", "nested", "sibling" }, result);
     }
 
+    // Folder内にあるNodeもIDから参照できる。
     [Fact]
     public void FindNodes_FindsNodeInsideFolder()
     {
@@ -180,6 +183,7 @@ public class LivfDocumentTests
         Assert.Same(layer, Assert.Single(document.FindNodes("nested")));
     }
 
+    // Node、State、StateGroupのIDは大文字と小文字を区別し、該当しない場合は空を返す。
     [Fact]
     public void FindMethods_DistinguishCaseAndReturnEmptyWhenMissing()
     {
@@ -221,6 +225,7 @@ public class LivfDocumentTests
         Assert.Empty(document.FindStateGroups("missing"));
     }
 
+    // IDが重複しても、該当するStateを宣言順にすべて返す。
     [Fact]
     public void FindStates_ReturnsAllStatesWithDuplicateIdsInDeclarationOrder()
     {
@@ -246,6 +251,7 @@ public class LivfDocumentTests
         Assert.Same(stateB, result[1]);
     }
 
+    // IDが重複しても、該当するStateGroupを宣言順にすべて返す。
     [Fact]
     public void FindStateGroups_ReturnsAllGroupsWithDuplicateIdsInDeclarationOrder()
     {
@@ -271,6 +277,7 @@ public class LivfDocumentTests
         Assert.Same(groupB, result[1]);
     }
 
+    // Document構築後に入力元のリストを変更しても、宣言内容は変わらない。
     [Fact]
     public void Constructor_CopiesNodesStatesAndStateGroups()
     {

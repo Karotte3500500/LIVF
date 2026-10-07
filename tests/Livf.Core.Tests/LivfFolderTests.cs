@@ -4,6 +4,7 @@ namespace Livf.Core.Tests;
 
 public class LivfFolderTests
 {
+    // Folderの子Nodeとその子孫を宣言順に列挙する。
     [Fact]
     public void EnumerateDescendants_EnumeratesNestedNodesInDeclarationOrder()
     {
@@ -85,6 +86,7 @@ public class LivfFolderTests
         Assert.Equal(new[] { "a", "inner", "b", "c" }, result);
     }
 
+    // Folder構築後に入力元の子Nodeリストを変更しても、子Nodeは変わらない。
     [Fact]
     public void Constructor_CopiesChildren()
     {

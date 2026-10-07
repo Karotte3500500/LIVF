@@ -5,6 +5,7 @@ namespace Livf.Core.Tests;
 
 public class LivfModelCollectionTests
 {
+    // 公開コレクションを配列やリストとして扱っても、宣言内容を差し替えられない。
     [Fact]
     public void PublicCollections_CannotBeModifiedThroughExposedLists()
     {
@@ -94,6 +95,7 @@ public class LivfModelCollectionTests
         AssertCannotReplaceFirstElement(group.StateIds);
     }
 
+    // MetadataとNodeのtagsは、省略と空リストの明示を区別して保持する。
     [Fact]
     public void OptionalTags_DistinguishOmittedAndEmptyLists()
     {

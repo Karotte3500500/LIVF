@@ -4,6 +4,7 @@ namespace Livf.Core.Tests;
 
 public class LivfStateGroupTests
 {
+    // StateGroup構築後に入力元の対象IDとState IDを変更しても、宣言内容は変わらない。
     [Fact]
     public void Constructor_CopiesTargetsAndStateIds()
     {
@@ -27,6 +28,7 @@ public class LivfStateGroupTests
         Assert.Equal("state", Assert.Single(group.StateIds));
     }
 
+    // targetsの省略と空リストの明示を区別して保持する。
     [Fact]
     public void Constructor_DistinguishesOmittedAndEmptyTargets()
     {

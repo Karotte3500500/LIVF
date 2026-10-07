@@ -4,6 +4,7 @@ namespace Livf.Core.Tests;
 
 public class LivfChangeTests
 {
+    // visibleの省略と、opacityに明示した0を区別して保持する。
     [Fact]
     public void Constructor_PreservesOmittedVisibleAndExplicitZeroOpacity()
     {
@@ -18,6 +19,7 @@ public class LivfChangeTests
         Assert.Equal(0.0, change.Opacity);
     }
 
+    // visibleに明示したfalseと、opacityの省略を区別して保持する。
     [Fact]
     public void Constructor_PreservesExplicitFalseAndOmittedOpacity()
     {
