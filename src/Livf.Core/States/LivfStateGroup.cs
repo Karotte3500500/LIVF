@@ -15,7 +15,7 @@ public sealed class LivfStateGroup
         Name = name;
         SelectionMode = selectionMode;
         DefaultStateId = defaultStateId;
-        TargetIds = targetIds?.ToArray();
-        StateIds = stateIds.ToArray();
+        TargetIds = targetIds is null ? null : Array.AsReadOnly(targetIds.ToArray());
+        StateIds = Array.AsReadOnly(stateIds.ToArray());
     }
 }

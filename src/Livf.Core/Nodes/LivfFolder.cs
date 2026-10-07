@@ -11,7 +11,7 @@ public sealed class LivfFolder : LivfNode
     {
         SelectionMode = selectionMode;
         DefaultChildId = defaultChildId;
-        Children = children.ToArray();
+        Children = Array.AsReadOnly(children.ToArray());
     }
 
     /// <summary>

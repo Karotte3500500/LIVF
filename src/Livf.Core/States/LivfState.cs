@@ -12,7 +12,7 @@ public sealed class LivfState
     {
         Id = id;
         Name = name;
-        Changes = changes.ToArray();
-        Tags = tags?.ToArray();
+        Changes = Array.AsReadOnly(changes.ToArray());
+        Tags = tags is null ? null : Array.AsReadOnly(tags.ToArray());
     }
 }

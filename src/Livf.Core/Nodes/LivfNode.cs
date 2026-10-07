@@ -17,6 +17,6 @@ public abstract class LivfNode
         Visible = visible;
         Opacity = opacity;
         Locked = locked;
-        Tags = tags?.ToArray();
+        Tags = tags is null ? null : Array.AsReadOnly(tags.ToArray());
     }
 }

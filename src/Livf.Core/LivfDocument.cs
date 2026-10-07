@@ -23,9 +23,9 @@ public sealed class LivfDocument
         Metadata = metadata;
         Canvas = canvas;
         DefaultStateId = defaultStateId;
-        Nodes = nodes.ToArray();
-        States = states.ToArray();
-        StateGroups = stateGroups.ToArray();
+        Nodes = Array.AsReadOnly(nodes.ToArray());
+        States = Array.AsReadOnly(states.ToArray());
+        StateGroups = Array.AsReadOnly(stateGroups.ToArray());
     }
 
     /// <summary>

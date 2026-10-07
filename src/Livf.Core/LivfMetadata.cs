@@ -24,7 +24,7 @@ public sealed class LivfMetadata
         ModifiedAt = modifiedAt;
         Application = application;
         License = license;
-        Tags = tags?.ToArray();
+        Tags = tags is null ? null : Array.AsReadOnly(tags.ToArray());
     }
 
 }
