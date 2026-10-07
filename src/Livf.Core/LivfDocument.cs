@@ -27,4 +27,22 @@ public sealed class LivfDocument
         States = states.ToArray();
         StateGroups = stateGroups.ToArray();
     }
+
+    public IEnumerable<LivfNode> EnumerateNodes()
+    {
+        foreach (var node in Nodes)
+        {
+            yield return node;
+
+            if (node is not LivfFolder folder)
+            {
+                continue;
+            }
+            
+            foreach (var descendant in folder.EnumerateDescendants())
+            {
+                yield return descendant;
+            }
+        }
+    }
 }
