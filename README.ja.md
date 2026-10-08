@@ -91,6 +91,7 @@ livf/
 - `Livf.Core`
 - `Livf.Serialization`
 - `Livf.Validation`
+- `Livf.Runtime`
 - `Livf.Rendering`
 - `Livf.Cli`
 - Unityランタイム
