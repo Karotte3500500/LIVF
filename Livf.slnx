@@ -1,8 +1,10 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/Livf.Core/Livf.Core.csproj" />
+    <Project Path="src/Livf.Serialization/Livf.Serialization.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Livf.Core.Tests/Livf.Core.Tests.csproj" />
+    <Project Path="tests/Livf.Serialization.Tests/Livf.Serialization.Tests.csproj" />
   </Folder>
 </Solution>
