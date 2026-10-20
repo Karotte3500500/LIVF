@@ -16,9 +16,6 @@ public sealed class LivfPackage : IDisposable
 
     public void Dispose()
     {
-        if (Resource is IDisposable disposable)
-        {
-            disposable.Dispose();
-        }
+        Resource.Dispose();
     }
 }

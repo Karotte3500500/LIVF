@@ -7,7 +7,7 @@ public static class LivfLoader
         throw new NotImplementedException();
     }
 
-    public static LivfPackage Load(Stream stream, bool laveOpen = false)
+    public static LivfPackage Load(Stream stream, bool leaveOpen = false)
     {
         throw new NotImplementedException();
     }

@@ -1,6 +1,6 @@
 namespace Livf.Serialization.Resources;
 
-public interface ILivfResourceProvider
+public interface ILivfResourceProvider : IDisposable
 {
     bool Exists(string path);
     Stream Open(string path);
