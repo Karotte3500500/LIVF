@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../Livf.Core/Livf.Core.csproj" />
+    <InternalsVisibleTo Include="Livf.Serialization.Tests" />
   </ItemGroup>
 
 </Project>
